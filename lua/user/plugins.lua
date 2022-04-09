@@ -45,7 +45,9 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- common lib
 
   -- colorschemes
+  use "lunarvim/colorschemes"
   use "shaunsingh/moonlight.nvim"
+  use "folke/tokyonight.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- main completion plugin
@@ -62,6 +64,7 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"
+  -- use "tamago324/nlsp-settings.nvim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"

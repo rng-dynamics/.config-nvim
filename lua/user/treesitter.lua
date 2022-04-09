@@ -5,7 +5,7 @@ if not ok then
 end
 
 configs.setup {
-  ensure_installed = { "cpp", "python", "rust" },
+  ensure_installed = { "c", "cpp", "python", "rust" },
   sync_install = false, 
   ignore_install = { "" }, -- List of parsers to ignore installing
   highlight = {
