@@ -1,3 +1,6 @@
+-- The following repository has some good neovim setup:
+-- https://github.com/LunarVim/Neovim-from-scratch
+
 local fn = vim.fn
 
 -- Automatically install packer
