@@ -74,6 +74,9 @@ return packer.startup(function(use)
   -- use "nvim-telescope/telescope-media-files.nvim"
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
 
+  -- Devicons
+  use "kyazdani42/nvim-web-devicons"
+
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
