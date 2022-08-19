@@ -77,11 +77,21 @@ return packer.startup(function(use)
 
   -- Devicons
   use "kyazdani42/nvim-web-devicons"
+  use "ryanoasis/vim-devicons"
 
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
+  }
+
+  -- nvim-tree
+  use {
+    "kyazdani42/nvim-tree.lua",
+    -- requires = {
+    --   "kyazdani42/nvim-web-devicons"
+    -- }
+    -- tag = "nightly"
   }
 
   -- Automatically set up configuration after cloning packer.nvim
