@@ -5,6 +5,12 @@ if not status_ok then
   return
 end
 
+-- With
+--   :LspInstall [--sync] [server]
+-- e.g.,
+--   :LspInstall clangd@10.0.0
+-- we can install a particular version of a language server.
+
 -- Register a handler that will be called for all installed servers.
 -- Alternatively, you may also register handlers on specific server instances instead (see example below).
 lsp_installer.on_server_ready(function(server)
