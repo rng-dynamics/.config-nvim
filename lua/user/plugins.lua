@@ -94,6 +94,8 @@ return packer.startup(function(use)
     -- tag = "nightly"
   }
 
+  -- use "lukas-reineke/lsp-format.nvim"
+
   -- Automatically set up configuration after cloning packer.nvim
   if PACKER_BOOTSTRAP then
     require("packer").sync()
