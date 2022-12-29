@@ -1,11 +1,11 @@
--- https://github.com/williamboman/nvim-lsp-installer
+-- https://github.com/williamboman/mason.nvim
 
-local status_ok, lsp_installer = pcall(require, "nvim-lsp-installer")
+local status_ok, mason = pcall(require, "mason")
 if not status_ok then
   return
 end
 
-lsp_installer.setup {}
+mason.setup {}
 
 local status_ok, lspconfig = pcall(require, "lspconfig")
 if not status_ok then
@@ -19,6 +19,7 @@ local common_opts = {
   capabilities = require("user.lsp.handlers").capabilities,
 }
 
+-- TODO: with Mason: has the name now changed from pylsp to python-lsp-server?
 local pylsp_specific_opts = require("user.lsp.settings.pylsp")
 local pylsp_opts = vim.tbl_deep_extend("force", pylsp_specific_opts, common_opts)
 -- vim.pretty_print(pylsp_opts)
