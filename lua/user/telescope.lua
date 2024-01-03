@@ -5,9 +5,6 @@ if not status_ok then
   return
 end
 
--- telescope.load_extension('media_files')
-telescope.load_extension('fzf')
-
 local actions = require "telescope.actions"
 
 telescope.setup {
@@ -112,3 +109,8 @@ telescope.setup {
     -- please take a look at the readme of the extension you want to configure
   },
 }
+
+-- load_extension for fzf neets to be called after setup function
+telescope.load_extension('fzf')
+
+-- telescope.load_extension('media_files')

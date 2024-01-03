@@ -19,10 +19,10 @@ nvim_tree.setup({
             untracked = "★"
         },
         folder = {
-            -- default = " ",
-            -- open = " ",
-            default = "",
-            open = "",
+            default = " ",
+            open = " ",
+            -- default = "",
+            -- open = "",
             symlink = ""
         }
       }
