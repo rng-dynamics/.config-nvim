@@ -6,6 +6,15 @@ if not ok then
 end
 
 nvim_tree.setup({
+  view = {
+    -- adaptive_size = true,
+    preserve_window_proportions = true,
+  },
+  actions = {
+    open_file = {
+      resize_window = false,
+    },
+  },
   renderer = {
     icons = {
       glyphs = {

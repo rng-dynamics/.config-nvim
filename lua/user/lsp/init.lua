@@ -4,4 +4,5 @@ if not status_ok then
 end
 
 require "user.lsp.mason"
+require "user.lsp.mason-tool-installer"
 require("user.lsp.handlers").setup()

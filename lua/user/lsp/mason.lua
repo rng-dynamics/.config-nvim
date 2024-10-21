@@ -19,11 +19,11 @@ local common_opts = {
   capabilities = require("user.lsp.handlers").capabilities,
 }
 
--- TODO: with Mason: has the name now changed from pylsp to python-lsp-server?
-local pylsp_specific_opts = require("user.lsp.settings.pylsp")
-local pylsp_opts = vim.tbl_deep_extend("force", pylsp_specific_opts, common_opts)
--- vim.pretty_print(pylsp_opts)
-lspconfig.pylsp.setup(pylsp_opts)
+-- -- TODO: with Mason: has the name now changed from pylsp to python-lsp-server?
+-- local pylsp_specific_opts = require("user.lsp.settings.pylsp")
+-- local pylsp_opts = vim.tbl_deep_extend("force", pylsp_specific_opts, common_opts)
+-- -- vim.pretty_print(pylsp_opts)
+-- lspconfig.pylsp.setup(pylsp_opts)
 
 local clangd_specific_opts = require("user.lsp.settings.clangd")
 local clangd_opts = vim.tbl_deep_extend("force", clangd_specific_opts, common_opts)

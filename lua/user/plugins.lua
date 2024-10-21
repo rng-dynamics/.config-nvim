@@ -66,8 +66,9 @@ return packer.startup(function(use)
   use "rafamadriz/friendly-snippets" -- a bunch of snipptes to use
 
   -- LSP
-  use "neovim/nvim-lspconfig"
-  use "williamboman/mason.nvim"
+  use { "neovim/nvim-lspconfig", tag = "v1.0.0" }
+  use { "williamboman/mason.nvim", tag = "v1.10.0" }
+  use "WhoIsSethDaniel/mason-tool-installer"
   -- use "tamago324/nlsp-settings.nvim"
 
   -- Telescope
