@@ -8,8 +8,8 @@ end
 mason_tool_installer.setup({
 
 ensure_installed = {
-    { "clangd", version = "18.1.3" },
-    { "clang-format", version = "18.1.8" },
+    { "clangd", version = "19.1.2" },
+    { "clang-format", version = "19.1.4" },
     "python-lsp-server",
     "lua-language-server",
     "cpplint",
