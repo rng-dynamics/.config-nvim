@@ -35,6 +35,8 @@ local options = {
   shiftwidth = 4,   -- Indents will have a width of 4.
   softtabstop = 4,  -- Sets the number of columns for a TAB.
   expandtab = true, -- Expand TABs to spaces.
+
+  wrap = false,
 }
 
 vim.opt.shortmess:append "c"
