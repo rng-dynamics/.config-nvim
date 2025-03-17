@@ -36,7 +36,9 @@ local options = {
   softtabstop = 4,  -- Sets the number of columns for a TAB.
   expandtab = true, -- Expand TABs to spaces.
 
-  wrap = false,
+  wrap = false,           -- do not wrap lines
+  -- use unnamed system clipboard ("ctrl-c ctrl-v") register by default
+  clipboard = "unnamed",
 }
 
 vim.opt.shortmess:append "c"
